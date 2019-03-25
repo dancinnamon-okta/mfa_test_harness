@@ -1,0 +1,12 @@
+//Rename to environment.js prior to use.
+
+//Provide the URL to both your MFA and Adaptive MFA orgs here.
+//They may be the same.
+var mfa_okta_org = 'https://orgnamehere.oktapreview.com';
+var amfa_okta_org = 'https://orgnamehere.oktapreview.com';
+
+//Provide an api key to each of your orgs here.
+//NOTE: This is not best practice.  API keys should never be client side in a real scenario.
+//Use this approach in your test harness ONLY!
+var mfa_api_key = '<API_KEY>';
+var amfa_api_key = '<API_KEY>';
