@@ -1,4 +1,4 @@
-# mfa_test_harness
+# Okta MFA Test Harness
 A lightweight test harness that allows quick evaluation of Okta's sign-on policies
 
 ![MFA Test Harness Screenshot](https://github.com/dancinnamon-okta/mfa_test_harness/blob/master/readme_images/screenshot.jpg "MFA Test Harness Screenshot")
