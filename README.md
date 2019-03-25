@@ -31,7 +31,7 @@ A lightweight test harness that allows quick evaluation of Okta's sign-on polici
 
 **3. Run docker-compose build**
 Running "docker-compose build" in your favorite shell will fetch the proper environment for running the demo- as shown:
-![MFA Test Harness Docker Build](https://github.com/dancinnamon-okta/mfa_test_harness/blob/master/readme_images/Docker_Build.jpg "MFA Test Harness Docker Build)
+![MFA Test Harness Docker Build](https://github.com/dancinnamon-okta/mfa_test_harness/blob/master/readme_images/Docker_Build.jpg "MFA Test Harness Docker Build")
 **You're done!**
 
 ## How To Run
