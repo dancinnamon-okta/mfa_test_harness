@@ -31,7 +31,7 @@ A lightweight test harness that allows quick evaluation of Okta's sign-on polici
 
 **3. Run docker-compose build**
 Running "docker-compose build" in your favorite shell will fetch the proper environment for running the demo- as shown:
-![MFA Test Harness Docker Build](https://github.com/dancinnamon-okta/swa_opp_demo/blob/master/readme_images/Docker_Build.jpg "MFA Test Harness Docker Build)
+![MFA Test Harness Docker Build](https://github.com/dancinnamon-okta/mfa_test_harness/blob/master/readme_images/Docker_Build.jpg "MFA Test Harness Docker Build)
 **You're done!**
 
 ## How To Run
@@ -50,12 +50,12 @@ While this guide assumes a working understanding of how to configure Okta, there
 
 **2. Set your current IP address as a trusted gateway/proxy**
   In addition to requiring an API key to "trust" your test harness, your machine must also be setup as a trusted proxy in Okta.  In Okta, create a network zone called "MFA Test Harness", and add your current IP address, as shown.
-  ![MFA Test Harness Network Zone](https://github.com/dancinnamon-okta/swa_opp_demo/blob/master/readme_images/Network_Zone.jpg "MFA Test Harness Network Zone")
+  ![MFA Test Harness Network Zone](https://github.com/dancinnamon-okta/mfa_test_harness/blob/master/readme_images/Network_Zone.jpg "MFA Test Harness Network Zone")
   *Note- This is not a one-time operation.  This step should always be performed prior to use!*
 
 **3. Add http://localhost:8080 as a trusted origin**
   This step is required to enable your browser to run local+Okta code concurrently- through the use of CORS policy.
-  ![MFA Test Harness Trusted Origin](https://github.com/dancinnamon-okta/swa_opp_demo/blob/master/readme_images/Trusted_Origin.jpg "MFA Test Harness Trusted Origin")
+  ![MFA Test Harness Trusted Origin](https://github.com/dancinnamon-okta/mfa_test_harness/blob/master/readme_images/Trusted_Origin.jpg "MFA Test Harness Trusted Origin")
 
 **You're done!**
 
@@ -67,7 +67,7 @@ At this time, you'll either be authenticated into Okta, or challenged for MFA.  
 **2. Login to the normal Okta administrative interface, and view the system logs.**
 Find your authentication attempt in the system log- as shown.  Expand the "client" information, and you should see "Ireland", as shown.
 *Note- you must see "Ireland" in the client section of the event.  Even if configured incorrectly, you may see "Ireland" somewhere in the log entry as a link in the proxy IP Chain.  It MUST be in the client section to be evaluated by Okta properly!!*
-![MFA Test Harness Log Example](https://github.com/dancinnamon-okta/swa_opp_demo/blob/master/readme_images/Log_Example.jpg "MFA Test Harness Log Example)
+![MFA Test Harness Log Example](https://github.com/dancinnamon-okta/mfa_test_harness/blob/master/readme_images/Log_Example.jpg "MFA Test Harness Log Example)
 
 ##Restrictions/Caveats
 **1. Only OTP MFA factors are supported by the test harness.**
