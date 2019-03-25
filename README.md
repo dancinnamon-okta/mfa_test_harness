@@ -30,7 +30,11 @@ A lightweight test harness that allows quick evaluation of Okta's sign-on polici
    *Note- in src/environment.js, there are settings for 2 Okta orgs.  The intent is to show the differences in feature-sets between MFA and Adaptive MFA in Okta.  There is a checkbox on the login form to select which set of variables to actually use.*
 
 **3. Run docker-compose build**
-Running "docker-compose build" in your favorite shell will fetch the proper environment for running the demo- as shown:
+Running
+
+`docker-compose build`
+
+in your favorite shell will fetch the proper environment for running the demo- as shown:
 ![MFA Test Harness Docker Build](https://github.com/dancinnamon-okta/mfa_test_harness/blob/master/readme_images/Docker_Build.jpg "MFA Test Harness Docker Build")
 **You're done!**
 
