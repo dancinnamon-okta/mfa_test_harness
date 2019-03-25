@@ -94,8 +94,16 @@
               excludeAvailableScreenResolution: true,
               excludeDeviceMemory: true
             };
+
+            if(this.adaptive) {
+              okta_org = amfa_okta_org;
+            }
+            else {
+              okta_org = mfa_okta_org;
+            }
+
             try {
-              var config = {url: 'https://tcfamfa.oktapreview.com'};
+              var config = {url: okta_org};
               var authClient = new OktaAuth(config);
               var vm = this;
               authClient.fingerprint()
@@ -106,11 +114,6 @@
                 .fail(function(err) {
                   console.log(err);
                 })
-            //  var vm = this;
-            //  new Fingerprint2(options).get(function(result, components) {
-            //     vm.fingerPrint = result
-            //     console.log(result)
-            //  });
             }
             catch(error) {
               console.log(error)
