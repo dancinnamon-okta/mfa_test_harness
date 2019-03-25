@@ -1,6 +1,8 @@
 # mfa_test_harness
 A lightweight test harness that allows quick evaluation of Okta's sign-on policies
 
+![MFA Test Harness Screenshot](https://github.com/dancinnamon-okta/mfa_test_harness/blob/master/readme_images/screenshot.jpg "MFA Test Harness Screenshot")
+
 ## Components
 **1. src/policy_demo_api.html**
   This is the main test harness file.  It is a very basic vue.js app.  It is configured as a trusted application within Okta so that location/device information may be passed in at login time.
