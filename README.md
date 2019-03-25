@@ -67,11 +67,12 @@ At this time, you'll either be authenticated into Okta, or challenged for MFA.  
 
 **2. Login to the normal Okta administrative interface, and view the system logs.**
 Find your authentication attempt in the system log- as shown.  Expand the "client" information, and you should see "Ireland", as shown.
+![MFA Test Harness Log Example](https://github.com/dancinnamon-okta/mfa_test_harness/blob/master/readme_images/Log_Example.jpg "MFA Test Harness Log Example")
 
-*Note- you must see "Ireland" in the client section of the event.  Even if configured incorrectly, you may see "Ireland" somewhere in the log entry as a link in the proxy IP Chain.  It MUST be in the client section to be evaluated by Okta properly!!*
-![MFA Test Harness Log Example](https://github.com/dancinnamon-okta/mfa_test_harness/blob/master/readme_images/Log_Example.jpg "MFA Test Harness Log Example)
+*Note- you must see "Ireland" in the CLIENT section of the event.  Even if configured incorrectly, you may see "Ireland" somewhere in the log entry as a link in the proxy IP Chain.  It MUST be in the client section to be evaluated by Okta MFA policies properly!!*
 
-##Restrictions/Caveats
+
+## Restrictions/Caveats
 **1. Only OTP MFA factors are supported by the test harness.**
 If you're challenged by Okta for MFA according to policy, the test harness will select the first available OTP MFA factor and will use that.  The user must also be previously enrolled in an OTP factor.
 
